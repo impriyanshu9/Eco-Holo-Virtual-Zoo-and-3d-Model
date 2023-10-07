@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ 
+ <link rel="icon" type="image/svg+xml" href="home_images/logo.jpg" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>EcoHolo Virtual ZOO</title>
+  <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- custom css file link  -->
+ <link rel="stylesheet" href="css/style.css">
+ <style>
+    .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  margin-block-start: 5px;
+}
+
+ </style>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>    
+<!-- header section starts  -->
+<header>
+    <div class="logo">
+        <div class="logo-container">
+          <img src="home_images/logo2.jpg" alt="">
+          <span class="logo-text">EcoHolo Virtual ZOO</span>
+        </div>
+      </div>
+      
+
+      
+
+  <div id="menu-bar" class="fas fa-bars"></div>
+  <nav class="navbar">
+    <a href="#home"><i class="fas fa-home"></i> home</a>
+    <a href="#Menu"><i class="fas fa-laptop-code"></i> Gallery</a>
+    <style>
+
+
+    </style>
+    <a href="#" id="logoutLink"><i class="fas fa-sign-out-alt"></i> Logout</a>
+  </nav>
+  
+</header>
+
+
+
+<!-- header section ends -->
+<!-- home section starts  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>Since you can't come to us, let the ZOO come to YOU!</h3>
+        <p>Missed any of our virtual zoo days? You can find all of our VIRTUAL ZOO DAYS on our EcoHolo Virtual ZOO page. The animals are waiting.</p>
+        <a href="#" class="btn">Welcome</a>
+    </div>
+    <div class="image">
+        <img src="index_images/a1.jpg" alt="">
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Menu section starts  -->
+
+
+<section class="Menu" id="Menu">
+    <h1 class="heading">EcoHolo <span>Virtual</span> Zoo</h1>
+    <div class="box-container">
+        <div class="box">
+         
+            <img src="index_images/a1.jpg" alt="">
+            <h3>Extinct Fauna</h3>
+            <a href="#" class="btn" onclick="view()">View</a>
+          </div>
+          
+        <div class="box">
+          
+            <img src="index_images/a3.jpg" alt="">
+            <h3>Extant Fauna</h3>
+            <a href="#" class="btn" onclick="view1()">View</a>
+        </div>
+        <div class="box">
+       
+            <img src="plant1/rho.jpg" alt="">
+            <h3>Extinct Flora</h3>
+            <a href="#" class="btn" onclick="view2()">View</a>
+        </div>
+        <div class="box">
+         
+            <img src="plant1/lotos.jpeg" alt="">
+            <h3>Extant Fauna</h3>
+            <a href="#" class="btn" onclick="view3()">View</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- footer section  -->
+<section class="footer">
+    <div class="share">
+        <a href="#" class="btn" onclick="openInstagram1()" target="_blank">facebook</a>
+        <a href="#" class="btn" onclick="openInstagram2()" target="_blank">twitter</a>
+        <a href="#" class="btn" onclick="openInstagram3()" target="_blank">instagram</a>
+        <a href="#" class="btn" onclick="openInstagram4()" target="_blank">pinterest</a>
+        <a href="#" class="btn" onclick="openInstagram()" target="_blank">linkedin</a>
+    </div>
+</section>
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script type="module" src="js/app.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#logoutLink').click(function(e) {
+            e.preventDefault(); // Prevent the default link behavior
+            window.location.href = 'home.html'; // Redirect to home.html
+        });
+    });
+</script>
+<script>
+
+function view() {
+    // Change the window location to "hello.html" when the button is clicked.
+    window.location.href = 'extinct.html';
+}
+
+</script>
+<script>
+
+  function view1() {
+      // Change the window location to "hello.html" when the button is clicked.
+      window.location.href = 'extant.html';
+  }
+  
+  </script>
+
+<script>
+
+  function view2() {
+      // Change the window location to "hello.html" when the button is clicked.
+      window.location.href = 'flora1.html';
+  }
+  
+  </script>
+
+<script>
+
+  function view3() {
+      // Change the window location to "hello.html" when the button is clicked.
+      window.location.href = 'flora2.html';
+  }
+  
+  </script>
+
+</body>
+</html>
